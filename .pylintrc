@@ -13,3 +13,10 @@
 
 #import-error, wrong-import-position
 disable=import-error
+
+; [MASTER]
+; init-hook='import sys; sys.path.append("/path/to/root")'
+; init-hook="from pylint.config import find_pylintrc; import os, sys; sys.path.append(os.path.dirname(find_pylintrc()))"
+
+[MASTER]
+init-hook="from pylint.config import find_pylintrc; import os, sys; sys.path.append(os.path.dirname(find_pylintrc()))"
