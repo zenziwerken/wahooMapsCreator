@@ -13,9 +13,9 @@ import platform
 import shutil
 
 # import custom python packages
-from common_python import file_directory_functions as fd_fct
+import common_python.file_directory_functions as fd_fct
 from common_python import constants
-from common_python import constants_functions as const_fct
+import common_python.constants_functions as const_fct
 
 from common_python.downloader import Downloader
 from common_python.geofabrik import Geofabrik
