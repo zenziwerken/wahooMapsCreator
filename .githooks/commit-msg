@@ -1,0 +1,6 @@
+#!/bin/bash
+# https://gist.github.com/pgilad/5d7e4db725a906bd7aa7
+[[ $(cat $1) =~ [FEAT|HOTFIX]+-[0-9]+.* ]] || {
+    echo >&2 "ERROR: Commit message requires JIRA key. Example: \"ABC-123: Test Commit\""
+    exit 1
+}
