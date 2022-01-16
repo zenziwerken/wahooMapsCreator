@@ -6,6 +6,7 @@
 # top level
 /common_download
 /dist
+/build
 /output
 /envs
 osmconvert_tempfile.*
