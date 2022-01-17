@@ -2,12 +2,22 @@
 
 block_cipher = None
 
+from PyInstaller.utils.hooks import collect_data_files
+_osgeo_pyds = collect_data_files('osgeo', include_py_files=True)
 
-a = Analysis(['wahoo_map_creator.py'],
+osgeo_pyds = []
+for p, lib in _osgeo_pyds:
+    if '.pyd' in p:
+        osgeo_pyds.append((p, ''))
+
+binaries = osgeo_pyds
+
+a = Analysis(['wahoo_map_creator.py', 'tooling/shape2osm.py'],
              pathex=['/Users/benjamin/VSCode/wahooMapsCreator'],
-             binaries=[],
-             datas=[( 'common_resources', 'common_resources' )],
-             hiddenimports=['requests', 'gdal', 'geojson', 'shapely'],
+             binaries=binaries,
+             datas=[( 'common_resources', 'common_resources' ),
+                    ( 'tooling', 'tooling' )],
+             hiddenimports=['requests', 'gdal', 'geojson', 'shapely', 'osgeo', 'geos'],
              hookspath=[],
              runtime_hooks=[],
              excludes=[],
