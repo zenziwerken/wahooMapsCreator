@@ -204,9 +204,10 @@ special_regions = ['guadeloupe', 'guyane', 'martinique', 'mayotte', 'reunion']
 #               'boundary', 'bridge', 'highway', 'natural', 'oneway', 'place',
 #               'railway', 'tracktype', 'tunnel', 'waterway']
 
-FILTERED_TAGS = ['access', 'area=yes', 'bicycle', 'bridge', 'foot=ft_yes, foot_designated',
+FILTERED_TAGS = ['access', 'area=yes', 'bicycle', 'bridge', 'foot=ft_yes, foot_designated','amenity=fuel =cafe','shop=bicycle =bakery',
                  'highway=abandoned, bus_guideway, disused, bridleway, byway, construction, cycleway, footway, living_street, motorway, motorway_link, path, pedestrian, primary, primary_link, residential, road, secondary, secondary_link, service, steps, tertiary, tertiary_link, track, trunk, trunk_link, unclassified',
                  'natural=coastline, nosea, sea, beach, land, scrub, water, wetland =wood',
+                 'landuse=forest',
                  'leisure=park, nature_reserve', 'railway=abandoned, bus_guideway, disused, funicular, light_rail, miniature, narrow_gauge, preserved, rail, subway, tram',
                  'surface', 'tracktype', 'tunnel', 'waterway=canal, drain, river, riverbank', 'wood=deciduous']
 # FILTERED_TAGS = 'access \
@@ -237,9 +238,12 @@ FILTERED_TAGS_WIN = 'access= \
     area=yes \
     bicycle= \
     bridge= \
+    amenity=fuel =cafe \
+    shop=bicycle =bakery\
     foot=ft_yes =foot_designated \
     highway=abandoned =bus_guideway =disused =bridleway =byway =construction =cycleway =footway =living_street =motorway =motorway_link =path =pedestrian =primary =primary_link =residential =road =secondary =secondary_link =service =steps =tertiary =tertiary_link =track =trunk =trunk_link =unclassified \
-    natural=coastline =nosea =sea =beach =land =scrub =water =wetland =wood \
+    natural=coastline =nosea =sea =beach =land =scrub =water =wetland =wood \    
+    landuse=forest \
     leisure=park =nature_reserve \
     railway=abandoned =bus_guideway =disused =funicular =light_rail =miniature =narrow_gauge =preserved =rail =subway =tram \
     surface= \
