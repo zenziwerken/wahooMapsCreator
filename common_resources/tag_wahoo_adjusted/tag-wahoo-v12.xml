@@ -3,15 +3,20 @@
              profile-name="default-profile" xmlns="http://mapsforge.org/tag-mapping"
              xsi:schemaLocation="http://mapsforge.org/tag-mapping https://raw.githubusercontent.com/mapsforge/mapsforge/master/resources/tag-mapping.xsd">
 
-  <!-- ************* POIS *************** -->
-  <!-- TOURISM TAGS -->
+  <!-- ************* POIS *************** --> 
   <pois>
     <osm-tag key="tourism" value="attraction" zoom-appear="10" />
     <osm-tag key="tourism" value="information" zoom-appear="10" />
     <osm-tag key="tourism" value="museum" zoom-appear="10" />
     <osm-tag key="tourism" value="viewpoint" zoom-appear="10" />
+	
+    <osm-tag key="amenity" value="fuel" zoom-appear="14" /> 
+    <osm-tag key="amenity" value="cafe" zoom-appear="14" /> 
+    <osm-tag key="shop" value="bakery" zoom-appear="14" /> 
+	<osm-tag key="shop" value="bicycle" zoom-appear="14" />
+	<osm-tag key="shop" value="supermarket" zoom-appear="14" />
+	<osm-tag key="railway" value="station" zoom-appear="14" /> 
   </pois>
-
   <!-- PLACES TAGS -->
   <pois>
     <osm-tag key="place" value="city" zoom-appear="6" />
@@ -62,6 +67,9 @@
     <osm-tag key="natural" value="water" zoom-appear="8" />
     <osm-tag key="natural" value="wetland" zoom-appear="8" />
     <osm-tag key="natural" value="wood" zoom-appear="9" />
+	
+    <osm-tag key="landuse" value="forest" zoom-appear="8" /> 
+    <osm-tag key="landuse" value="wood" zoom-appear="8" /> 
     
     <osm-tag key="waterway" value="drain" zoom-appear="8"/>
     <osm-tag key="waterway" value="river" zoom-appear="8"/>
@@ -85,6 +93,8 @@
     <osm-tag key="railway" value="rail" zoom-appear="10" />
     <osm-tag key="railway" value="subway" zoom-appear="10" />
     <osm-tag key="railway" value="tram" zoom-appear="10" />
+	
+	<osm-tag key="railway" value="station" zoom-appear="14" /> 
   </ways>
 
   <!-- OTHER TAGS -->
