@@ -11,6 +11,15 @@
         <osm-tag key="highway" value="traffic_signals" zoom-appear="17" />
         <osm-tag key="highway" value="turning_circle" zoom-appear="15" />
     </pois>
+  <!-- POIS useful for longer bikerides --> 
+  <pois>
+        <osm-tag key="amenity" value="fuel" zoom-appear="14" /> 
+        <osm-tag key="amenity" value="cafe" zoom-appear="14" /> 
+        <osm-tag key="shop" value="bakery" zoom-appear="14" /> 
+		<osm-tag key="shop" value="bicycle" zoom-appear="14" />
+		<osm-tag key="railway" value="station" zoom-appear="14" /> 
+		<osm-tag key="railway" value="halt" zoom-appear="14" /> 
+  </pois> 
 
     <!-- <!-\- PUBLIC AMENITIES -\-> -->
     <!-- <pois> -->
@@ -629,6 +638,23 @@
     <!--     <osm-tag key="wood" renderable="false" value="coniferous" /> -->
     <!--     <osm-tag key="wood" renderable="false" value="deciduous" /> -->
     <!--     <osm-tag key="wood" renderable="false" value="mixed" /> -->
+        
+    <!-- tags used by vtm-elemnt.xml -->
+    <osm-tag key='bicycle' value='bic_yes' equivalent-values='yes,public,allowed' renderable='false' />
+	<osm-tag key='bicycle' value='bic_designated' equivalent-values='designated,official' renderable='false' />
+	<osm-tag key='bicycle' value='bic_permissive' equivalent-values='permissive' renderable='false' />
+	<osm-tag key='bicycle' value='bic_no' equivalent-values='no,prohibited' renderable='false' />
+	<osm-tag key='bicycle' value='bic_private' equivalent-values='delivery,restricted' renderable='false' />
+	<osm-tag key='bicycle' value='bic_forestry' equivalent-values='agricultural,agricultural;forestry' renderable='false' />
+	<osm-tag key='bicycle' value='bic_destination' equivalent-values='customers' renderable='false' />
+	<osm-tag key='bicycle' value='bic_permit' equivalent-values='license,fee,toll' renderable='false' />
+	<osm-tag key='foot' value='ft_yes' equivalent-values='yes,public,allowed' renderable='false' />
+	<osm-tag key='foot' value='ft_designated' equivalent-values='designated,official' renderable='false' />
+	<osm-tag key='foot' value='ft_permissive' equivalent-values='permissive' renderable='false' />
+	<osm-tag key='foot' value='ft_no' equivalent-values='no,prohibited' renderable='false' />
+	<osm-tag key='foot' value='ft_private' equivalent-values='delivery,restricted' renderable='false' />
+	<osm-tag key='foot' value='ft_destination' equivalent-values='customers' renderable='false' />
+	<osm-tag key='foot' value='ft_permit' equivalent-values='license,fee,toll' renderable='false' />
     </ways>
 
 
