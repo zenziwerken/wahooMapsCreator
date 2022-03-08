@@ -63,3 +63,6 @@ A theme can be copied to your device like that:
 If adb does seam to not work with your PC and Wahoo:
 - try to do the [Authorization](#authorize-bolt-to-connect-to-windows--macos) multiple times
 - try another USB cable. Some cables do not support adb / file transfer
+
+# Simplified usage with MTP-tranfer (under Windows)
+According to [the Wahoo documentation](https://support.wahoofitness.com/hc/en-us/articles/115000127910-Connecting-ELEMNT-BOLT-ROAM-to-Desktop-or-Laptop-Computers) the device is able to connect via MTP. On windows you can navigate to the maps folder and drag new map files onto the folder called `maps\8`. The system will ask if you want to overwrite existing files. Don't forget to [delete temp-files and Clear Cache](#delete-temp-files-and-clear-cache). You can simply reboot to clear the cache.
