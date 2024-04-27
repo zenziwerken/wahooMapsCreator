@@ -12,11 +12,13 @@
             "fuel",
             "cafe",
             "drinking_water",
-            "shelter"
+            "shelter",
+			"toilets"
         ],
         "shop": [
             "bakery",
-            "bicycle"
+            "bicycle",
+			"supermarket"
         ],
         "highway": [
             "abandoned",
